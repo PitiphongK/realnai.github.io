@@ -23,7 +23,7 @@ header img {
 
 header h1 {
   margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 5rem;
   background: linear-gradient(40deg, #000000, #000000, #000000, #000000);
   -webkit-background-clip: text;
@@ -35,7 +35,7 @@ header p {
   margin: 0;
   font-size: 1.25rem;
   color: #000000;
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 #bg {
