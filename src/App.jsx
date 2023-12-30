@@ -1,49 +1,14 @@
-import { useState } from "react";
-
-import Header from "./components/Header/Header.jsx";
-import TabButton from "./components/TabButton.jsx";
+import Header from "./components/Profile/Profile.jsx";
+import Navbar from "./components/Navbar/Navbar.jsx";
+import Skills from "./components/Skills/Skills.jsx";
 
 function App() {
-  const [selectedTopic, setSelectedTopic] = useState();
-
-  function handleSelect(selectedButton) {
-    // selectedButton => 'components', 'jsx', 'props', 'state'
-    setSelectedTopic(selectedButton);
-    // console.log(selectedTopic);
-  }
-
-  console.log("APP COMPONENT EXECUTING");
-
-  let tabContent;
 
   return (
     <div>
-      <section id="examples">
-        <menu>
-          <TabButton 
-            isSelected={selectedTopic === "components"}
-            onSelect={() => handleSelect("components")}
-          >
-            HOME
-          </TabButton>
-          <TabButton
-            isSelected={selectedTopic === "jsx"}
-            onSelect={() => handleSelect("jsx")}
-          >
-            ABOUT
-          </TabButton>
-          <TabButton
-            isSelected={selectedTopic === "props"}
-            onSelect={() => handleSelect("props")}
-          >
-            CONTACT
-          </TabButton>
-        </menu>
-        {tabContent}
-      </section>
+      <Navbar />
       <Header />
-      <main >
-      </main>
+      <Skills />
     </div>
   );
 }

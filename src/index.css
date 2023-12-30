@@ -1,24 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Roboto+Condensed:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
 
 * {
   box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Quicksand", sans-serif;
 }
 
 :root {
-  --primary-color: #7925d3;
-  --secondary-color: #a18aba;
-  --tertiary-color: #ebe7ef;
-  --quaternary-color: #1b082f;
+  --black: #000000;
   --white: #ffffff;
+  --main: #E6F0FF;
+  --accent: #3765DE;
+  --dark-blue: #212E42;
 }
 
 html {
   font-family: "Quicksand", sans-serif;
-  line-height: 1.5;
-
-  color: #000000;
-  background-color: #e6e6e6;
-
+  scroll-behavior: smooth;
+  color: var(--black);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -32,102 +31,19 @@ body {
   margin: 0;
 }
 
-main {
-  width: 90%;
-  max-width: 50rem;
-  margin: auto;
-}
-
-#core-concepts {
-  padding: 2rem;
-  border-radius: 6px;
-  background-color: #ffffff;
-}
-
-main h2 {
-  text-align: center;
-  font-family: "Quicksand", sans-serif;
-  color: #000000;
-}
-
-#core-concepts ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
-#core-concepts li {
-  width: 10rem;
-  text-align: center;
-}
-
-#core-concepts li img {
-  height: 4rem;
-  width: 6rem;
-  object-fit: cover;
-}
-
-#core-concepts li h3 {
-  margin: 0.5rem 0;
-}
-
-#core-concepts li p {
-  font-size: 0.9rem;
-}
-
-#examples {
-}
-
-#examples h2 {
-  text-align: left;
-}
-
-#examples menu {
-  padding:  1.5rem 5rem 1.5rem 0;
-  display: flex;
-  list-style: none;
-  justify-content: flex-end;
-  background-color: var(--white);
-  margin-top: 0px;
-}
-
-#examples menu button {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 6px;
-  background-color: transparent;
-  color: #000000;
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.2rem;
-  cursor: pointer;
-  transition: all 0.2s ease-in-out;
-}
-
-#examples menu button:hover {
-  background-color: #ffffff;
-  color: #7e7e7e;
-}
-
-#examples menu button.active {
-  background-color: #ffffff;
-  color: #000000;
-}
-
-#tab-content {
-  padding: 1rem;
-  border-radius: 6px;
-  background-color: #2f1d43;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-}
-
-#tab-content h3 {
+h1 {
+  font-size: 8rem;
   margin: 0;
 }
 
-#tab-content code {
-  font-size: 1rem;
+h2 {
+  font-size: 4rem;
+  margin: 0;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 3rem;
+  margin: 0;
+  font-weight: 400;
 }

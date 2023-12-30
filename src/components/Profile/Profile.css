@@ -1,0 +1,40 @@
+.profile {
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-blue);
+  margin: 10rem 0 0 0;
+  display: flex;
+  justify-content: center;
+}
+
+.profile-wrap {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  height: 100%;
+  max-width: 160rem;
+  z-index: 1;
+}
+
+header {
+  width: 100%;
+  height: 80rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 10rem.8rem;
+  color: var(--white);
+}
+
+header img {
+  height: 8rem;
+  width: 16rem;
+  object-fit: cover;
+}
+
+.suisei {
+  height: 70rem;
+}
+

@@ -1,0 +1,62 @@
+{
+    "skills": {
+        "computer-programming": [
+            {
+                "name": "Python",
+                "icon": "./skills/py.svg"
+            },
+            {
+                "name": "C++",
+                "icon": "./skills/cpp.svg"
+            },
+            {
+                "name": "JavaScript",
+                "icon": "./skills/js.svg"
+            },
+            {
+                "name": "Java",
+                "icon": "./skills/java.svg"
+            },
+            {
+                "name": "ReactJS",
+                "icon": "./skills/reactjs.svg"
+            },
+            {
+                "name": "R",
+                "icon": "./skills/r.svg"
+            },
+            {
+                "name": "Rust",
+                "icon": "./skills/rust.svg"
+            }
+        ],
+        "computer-programming-other": [
+            {
+                "name": "Postman",
+                "icon": "./skills/postman.svg"
+            },
+            {
+                "name": "QT",
+                "icon": "./skills/qt.svg"
+            }
+        ],
+        "video-editing-illustration": [
+            {
+                "name": "Premiere Pro",
+                "icon": "./skills/premiere.svg"
+            },
+            {
+                "name": "Photoshop",
+                "icon": "./skills/ps.svg"
+            },
+            {
+                "name": "Clip Studio Paint",
+                "icon": "./skills/csp.svg"
+            },
+            {
+                "name": "Procreate",
+                "icon": "./skills/procreate.svg"
+            }
+        ]
+    }
+}
