@@ -4,6 +4,7 @@
   box-sizing: border-box;
   font-size: 62.5%;
   font-family: "Quicksand", sans-serif;
+  letter-spacing: 0.05rem;
 }
 
 :root {
@@ -23,12 +24,12 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
-  min-height: 80rem;
+
 }
 
 body {
-  padding: 0;
   margin: 0;
+  padding: 0;
 }
 
 h1 {
@@ -46,4 +47,40 @@ h3 {
   font-size: 3rem;
   margin: 0;
   font-weight: 400;
+}
+
+@media screen and (max-width: 830px) {
+
+  h1 {
+    font-size: 6rem;
+  }
+
+  h2 {
+    font-size: 4rem;
+  }
+
+  h3 {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (max-width: 630px) {
+
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 3rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+  @media screen and (max-width: 500px) {
+
+    h1 {
+      font-size: 3.5rem;
+    }
+  }
 }

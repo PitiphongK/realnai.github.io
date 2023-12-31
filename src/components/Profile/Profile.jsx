@@ -11,10 +11,10 @@ export default function Header() {
     <div className="profile" ref={profileRef}>
       <Animation containerRef={profileRef} />
       <div className="profile-wrap">
-        <header>
+        <div className='header'>
           <h1>Hi, I'm Pitiphong</h1>
           <h3>A Software Engineer Student</h3>
-        </header>
+        </div>
         <div className="profile-picture">
           <img className="suisei" src={suisei} alt="suisei picture" />
         </div>

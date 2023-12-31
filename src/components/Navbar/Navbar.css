@@ -2,12 +2,21 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    right: 0;
     width: 100%;
-    height: 10rem;
-    background-color: var(--white);
+    height: 8rem;
+    background-color: transparent;
     z-index: 100;
-    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
     display: flex;
+    align-items: center;
+    color: var(--black);
+    transition: all 0.2s ease-in-out;
+}
+
+.scrolled {
+    background-color: var(--white);
+    color: var(--black);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
 .title {
@@ -17,7 +26,19 @@ nav {
     display: flex;
     align-items: center;
     margin-left: 5rem;
-    gap: 1rem;
+    gap: 0.5rem;
+    background-color: var(--white);
+    padding: 0.6rem 2rem;
+    border-radius: 3rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.title.scrolling {
+    background-color: var(--white);
+}
+
+.title:hover {
+    opacity: 0.6;
 }
 
 .logo {
@@ -32,32 +53,30 @@ nav {
 }
 
 .nav-items {
-    padding: 2.4rem 7rem 2.4rem 0;
+    padding: 2.4rem 3rem 2.4rem 0;
     display: flex;
     list-style: none;
     justify-content: flex-end;
     align-items: center;
-    background-color: var(--white);
     margin-top: 0;
     flex-grow: 1;
-    gap: 2rem;
+    gap: 0.5rem;
 }
 
 .nav-items button {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 500;
     padding: 0.8rem 1.6rem;
     border: none;
     border-radius: 0.6rem;
-    background-color: transparent;
-    color: var(--black);
     cursor: pointer;
     transition: all 0.2s ease-in-out;
+    background-color: transparent;
+    color: var(--white);
 }
 
 .nav-items button:hover {
-    background-color: var(--white);
-    color: #7e7e7e;
+    opacity: 0.5;
 }
 
 .nav-items button.active {

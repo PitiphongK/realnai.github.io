@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
+import bg_anim from "./bg-anim.json";
 
 const Animation = ({ containerRef }) => {
   const svgAnimRef = useRef(null);
@@ -11,7 +12,7 @@ const Animation = ({ containerRef }) => {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: '/assets/bg-anim.json',
+        path: './src/components/Animation/bg-anim.json',
       });
     };
 
@@ -27,14 +28,11 @@ const Animation = ({ containerRef }) => {
   return (
     <div
       ref={svgAnimRef}
-      className='anim'
       style={{
         position: 'absolute',
-        top: 'auto',
-        bottom: 0,
-        width: '108vh',
-        height: '120vh',
+        width: '100%',
         pointerEvents: 'none',
+        zIndex: 1,
       }}
     />
   );

@@ -4,6 +4,8 @@
     display: flex;
     justify-content: center;
     background-color: var(--white);
+    position: relative;
+    z-index: 1;
 }
 
 .skills-wrap {
@@ -15,7 +17,9 @@
     max-width: 160rem;
     padding: 20rem 10rem 20rem 10rem;
     gap: 4rem;
+    z-index: 1;
 }
+
 .skills-categories {
     display: flex;
     flex-direction: column;
@@ -29,12 +33,26 @@
 .skills-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 3rem;
     align-items: center;
+    padding: 2rem 0 2rem 0;
 }
+
 
 .skill img {
     height: 10rem;
     width: 10rem;
+    transition: transform 0.2s ease-in-out;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
+
+
+.custom-tooltip {
+    font-size: 20px !important;
+    pointer-events: auto !important;
+    border-radius: 5rem !important;
+}

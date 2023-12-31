@@ -1,34 +1,36 @@
 .profile {
   width: 100%;
   height: 100%;
-  background-color: var(--dark-blue);
-  margin: 10rem 0 0 0;
+  /* night theme gradient bg */
+  background: rgb(153, 148, 231);
+  background: linear-gradient(0deg, rgba(153, 148, 231, 1) 0%, rgba(43, 46, 88, 1) 49%, rgba(26, 26, 40, 1) 100%);
   display: flex;
   justify-content: center;
 }
 
 .profile-wrap {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   margin: 0 auto;
   width: 100%;
   height: 100%;
   max-width: 160rem;
   z-index: 1;
+  padding-top: 4rem;
 }
 
-header {
+.header {
   width: 100%;
   height: 80rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 10rem.8rem;
+  padding: 0 10rem 8rem;
   color: var(--white);
 }
 
-header img {
+.header img {
   height: 8rem;
   width: 16rem;
   object-fit: cover;
@@ -36,5 +38,96 @@ header img {
 
 .suisei {
   height: 70rem;
+  padding-right: 10rem;
+  transition: all 0.2s ease-in-out;
 }
 
+@media screen and (max-width: 1400px) {
+  .header {
+    width: 100%;
+    height: 80rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 0 0 10rem;
+    color: var(--white);
+  }
+
+}
+
+@media screen and (max-width: 1230px) {
+  .suisei {
+    padding: 0;
+  }
+
+  .profile-wrap {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    flex-direction: column;
+  }
+
+  .header {
+    width: 100%;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 5rem;
+    color: var(--white);
+    text-align: center;
+  }
+
+  @media screen and (max-width: 830px) {
+
+    .suisei {
+      height: 60rem;
+    }
+
+    .header {
+      width: 100%;
+      height: 30rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 5rem;
+      color: var(--white);
+      text-align: center;
+    }
+
+  }
+
+  @media screen and (max-width: 630px) {
+
+    .suisei {
+      height: 50rem;
+    }
+
+  }
+
+  @media screen and (max-width: 530px) {
+
+    .suisei {
+      height: 35rem;
+    }
+
+    .header {
+      width: 100%;
+      height: 20rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 0 3rem;
+      color: var(--white);
+      text-align: center;
+    }
+
+  }
+}

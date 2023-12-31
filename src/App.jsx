@@ -5,11 +5,11 @@ import Skills from "./components/Skills/Skills.jsx";
 function App() {
 
   return (
-    <div>
+    <>
       <Navbar />
       <Header />
       <Skills />
-    </div>
+    </>
   );
 }
 
