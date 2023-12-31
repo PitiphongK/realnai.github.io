@@ -1,6 +1,5 @@
 import React, { useEffect, useRef } from 'react';
 import lottie from 'lottie-web';
-import bg_anim from "./bg-anim.json";
 
 const Animation = ({ containerRef }) => {
   const svgAnimRef = useRef(null);
@@ -12,7 +11,7 @@ const Animation = ({ containerRef }) => {
         renderer: 'svg',
         loop: true,
         autoplay: true,
-        path: './src/components/Animation/bg-anim.json',
+        path: '/myWeb/bg-anim.json',
       });
     };
 
