@@ -1,8 +1,8 @@
-import React, { useRef } from 'react';
-import suisei from '../../assets/images/suisei.png';
-import Animation from '../Animation/Animation';
+import React, { useRef } from "react";
+import suisei from "../../assets/images/suisei.png";
+import Animation from "../Animation/Animation";
 
-import './Profile.css';
+import "./Profile.css";
 
 export default function Header() {
   const profileRef = useRef(null);
@@ -11,7 +11,7 @@ export default function Header() {
     <div className="profile" ref={profileRef}>
       <Animation containerRef={profileRef} />
       <div className="profile-wrap">
-        <div className='header'>
+        <div className="header">
           <h1>Hi, I'm Pitiphong</h1>
           <h3>A Software Engineer Student</h3>
         </div>

@@ -1,6 +1,6 @@
 .profile {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   /* night theme gradient bg */
   background: rgb(153, 148, 231);
   background: linear-gradient(0deg, rgba(153, 148, 231, 1) 0%, rgba(43, 46, 88, 1) 49%, rgba(26, 26, 40, 1) 100%);
@@ -10,7 +10,8 @@
 
 .profile-wrap {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  justify-content: center;
   margin: 0 auto;
   width: 100%;
   height: 100%;
@@ -21,12 +22,12 @@
 
 .header {
   width: 100%;
-  height: 80rem;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 0 10rem 8rem;
+  padding: 0 10rem;
   color: var(--white);
 }
 
@@ -35,11 +36,14 @@
   width: 16rem;
   object-fit: cover;
 }
+.profile-picture {
+  align-self: flex-end;
+}
 
 .suisei {
-  height: 70rem;
-  padding-right: 10rem;
+  height: 85vh;
   transition: all 0.2s ease-in-out;
+  padding: 0 10rem 0 0;
 }
 
 @media screen and (max-width: 1400px) {
@@ -50,7 +54,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 0 0 10rem;
+    padding: 0 10rem;
     color: var(--white);
   }
 
@@ -58,7 +62,11 @@
 
 @media screen and (max-width: 1230px) {
   .suisei {
+    height: 45rem;
     padding: 0;
+  }
+  .profile-picture {
+    align-self: center;
   }
 
   .profile-wrap {
@@ -78,7 +86,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 0 5rem;
+    padding: 5rem 5rem 2rem 5rem;
     color: var(--white);
     text-align: center;
   }
@@ -86,7 +94,7 @@
   @media screen and (max-width: 830px) {
 
     .suisei {
-      height: 60rem;
+      height: 45rem;
     }
 
     .header {
@@ -96,7 +104,7 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 0 5rem;
+      padding: 5rem 5rem 2rem 5rem;
       color: var(--white);
       text-align: center;
     }
@@ -106,7 +114,7 @@
   @media screen and (max-width: 630px) {
 
     .suisei {
-      height: 50rem;
+      height: 40rem;
     }
 
   }
@@ -124,9 +132,13 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding: 0 3rem;
+      padding: 3rem 3rem 5rem 3rem;
       color: var(--white);
       text-align: center;
+      flex-grow: 1;
+    }
+    .profile-wrap {
+      justify-content: flex-end;
     }
 
   }
