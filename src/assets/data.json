@@ -58,5 +58,33 @@
                 "icon": "./skills/procreate.svg"
             }
         ]
-    }
+    },
+    "projects": [
+        {
+            "name": "Software Engineering’s Website",
+            "description": "Software Engineering Website project was created to encourage education and teamwork in the software engineering industry. ",
+            "image": "./projects/SEweb.svg",
+            "github": "https://github.com/Kasitphoom/SEWeb",
+            "link": "https://seweb.kasitphoom.com/"
+        },
+        {
+            "name": "Vibin Studio",
+            "description": "Vibin Studio is a software application that enables users to play and manage their music files on a computer.",
+            "image": "./projects/vibin.svg",
+            "github": "https://github.com/Kasitphoom/Audio_EQ"
+        },
+        {
+            "name": "Pocket Piano",
+            "description": "Software Engineering Website project was created to encourage education and teamwork in the software engineering industry. ",
+            "image": "./projects/pocketpiano.svg",
+            "github": "https://github.com/RealNai/Pocket-Piano"
+        },
+        {
+            "name": "TypeLord",
+            "description": "Vibin Studio is a software application that enables users to play and manage their music files on a computer.",
+            "image": "./projects/typelord.svg",
+            "github": ""
+        }
+    ]
+
 }
