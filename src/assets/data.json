@@ -85,6 +85,24 @@
             "image": "./projects/typelord.svg",
             "github": ""
         }
+    ],
+    "buttons": [
+        {
+            "name": "Home",
+            "id" : "profile"
+        },
+        {
+            "name": "Skills",
+            "id" : "skills"
+        },
+        {
+            "name": "Projects",
+            "id" : "projects"
+        },
+        {
+            "name": "Contacts",
+            "id" : "contacts"
+        }
     ]
 
 }

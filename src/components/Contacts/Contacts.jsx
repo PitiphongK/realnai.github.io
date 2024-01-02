@@ -1,7 +1,7 @@
 import "./Contacts.css";
 const Contacts = () => {
   return (
-    <div className="contacts">
+    <div className="contacts" id="contacts">
       <div className="contacts-wrap">
         <h1>Contacts</h1>
         <div className="contacts-items">
@@ -10,7 +10,7 @@ const Contacts = () => {
             className="contacts-item"
             target="_blank"
           >
-            <i class="fa-solid fa-envelope"></i>
+            <i className="fa-solid fa-envelope"></i>
             <h4>pitiphong.kit@gmail.com</h4>
           </a>
           <a
@@ -18,7 +18,7 @@ const Contacts = () => {
             className="contacts-item"
             target="_blank"
           >
-            <i class="fa-brands fa-github"></i>
+            <i className="fa-brands fa-github"></i>
             <h4>Github</h4>
           </a>
           <a
@@ -26,7 +26,7 @@ const Contacts = () => {
             className="contacts-item"
             target="_blank"
           >
-            <i class="fa-brands fa-line"></i>
+            <i className="fa-brands fa-line"></i>
             <h4>pitiphong.kit</h4>
           </a>
           <a
@@ -34,7 +34,7 @@ const Contacts = () => {
             className="contacts-item"
             target="_blank"
           >
-            <i class="fa-brands fa-linkedin-in"></i>
+            <i className="fa-brands fa-linkedin-in"></i>
             <h4>Linkedin</h4>
           </a>
         </div>

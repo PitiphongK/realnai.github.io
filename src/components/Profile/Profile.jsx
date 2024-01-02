@@ -8,7 +8,7 @@ export default function Header() {
   const profileRef = useRef(null);
 
   return (
-    <div className="profile" ref={profileRef}>
+    <div className="profile" ref={profileRef} id="profile">
       <Animation containerRef={profileRef} />
       <div className="profile-wrap">
         <div className="header">

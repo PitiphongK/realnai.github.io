@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 import NavButton from "./NavButton.jsx";
 import comet from "../../assets/images/comet.png";
+import data from "../../assets/data.json";
 import "./Navbar.css";
 
-const buttons = ["Home", "Skills", "Projects","Contacts"]
-
 const Navbar = () => {
-  const [selectedPage, setSelectedPage] = useState();
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -23,30 +21,23 @@ const Navbar = () => {
     };
   }, []);
 
-  function handleSelect(selectedButton) {
-    setSelectedPage(selectedButton);
-  }
-
   return (
     <nav className={scrolled ? "scrolled" : ""}>
       <div className="title">
-        <a href=""><img className="logo" src={comet} alt="" /></a>
+        <a href="">
+          <img className="logo" src={comet} alt="" />
+        </a>
         <h1>Suisei</h1>
       </div>
       <div className="nav-items">
-        {buttons.map((button) => (
-          <NavButton
-            key={button}
-            onSelect={() => handleSelect(button)}
-            isSelected={button === selectedPage}
-            scrolled={scrolled}
-          >
-            {button}
+        {data?.buttons?.map((button) => (
+          <NavButton key={button.name} scrolled={scrolled} to={button.id}>
+            {button.name}
           </NavButton>
         ))}
       </div>
     </nav>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;

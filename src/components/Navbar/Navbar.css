@@ -63,7 +63,7 @@ nav {
     gap: 0.5rem;
 }
 
-.nav-items button {
+.nav-items .nav-button {
     font-size: 1.8rem;
     font-weight: 500;
     padding: 0.8rem 1.6rem;
@@ -75,11 +75,15 @@ nav {
     color: var(--white);
 }
 
-.nav-items button:hover {
+.nav-items .nav-button:hover {
     opacity: 0.5;
 }
 
-.nav-items button.active {
-    background-color: var(--white);
-    color: var(--accent);
+.nav-items .active {
+    color: var(--accent) !important;
+    opacity: 1 !important;
+}
+
+.nav-items .scrolled {
+    color: var(--light-blue) !important;
 }
