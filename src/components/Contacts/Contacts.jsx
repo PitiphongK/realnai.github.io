@@ -3,7 +3,7 @@ const Contacts = () => {
   return (
     <div className="contacts" id="contacts">
       <div className="contacts-wrap">
-        <h1>Contacts</h1>
+        <h1>Contact</h1>
         <div className="contacts-items">
           <a
             href="mailto:pitiphong.kit@gmail.com"
