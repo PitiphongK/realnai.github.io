@@ -16,18 +16,18 @@ export default {
         }
       }
 
-      // If no language is found in the path, redirect to the language-specific path
-      if (!found) {
-        const cookieLanguage = document.cookie.replace(
-          /(?:(?:^|.*;\s*)i18next=([^;]*).*$)|^.*$/,
-          "$1"
-        );
-        const defaultLanguage = "en";
-        const preferredLanguage = cookieLanguage || defaultLanguage;
+      // // If no language is found in the path, redirect to the language-specific path
+      // if (!found) {
+      //   const cookieLanguage = document.cookie.replace(
+      //     /(?:(?:^|.*;\s*)i18next=([^;]*).*$)|^.*$/,
+      //     "$1"
+      //   );
+      //   const defaultLanguage = "en";
+      //   const preferredLanguage = cookieLanguage || defaultLanguage;
 
-        // Redirect to the language-specific path
-        window.location.replace(`/myWeb/${preferredLanguage}`);
-      }
+      //   // Redirect to the language-specific path
+      //   window.location.replace(`/myWeb/${preferredLanguage}`);
+      // }
     }
     return found;
   },
