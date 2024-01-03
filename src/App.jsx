@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import { useTranslation } from "react-i18next";
+
 import Header from "./components/Profile/Profile.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 import Skills from "./components/Skills/Skills.jsx";
