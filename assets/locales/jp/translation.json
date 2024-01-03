@@ -1,0 +1,20 @@
+{
+  "suisei": "すいせい",
+  "home": "ホーム",
+  "skills": "スキル",
+  "projects": "プロジェクト",
+  "contact": "コンタクト",
+
+  "hi_im_pitiphong": "こんにちは、ピティフォンです",
+  "a_software_engineer_student": "ソフトウェアエンジニアの学生",
+
+  "computer_programming": "コンピュータープログラミング",
+  "video_editing_illustration": "動画編集とイラスト",
+
+  "description_seweb": "ソフトウェア エンジニアリング Web サイト プロジェクトは、学生が課題を提出し、教師が課題を採点できる教室用 Web サイトでした。",
+  "description_vibin": "Vibin Studio は、ユーザーがコンピュータ上で音楽ファイルを再生および管理できるようにするソフトウェア アプリケーションです。",
+  "description_pocket_piano" : "Pocket Piano は、あらゆるピアニストにとって使いやすく楽しい 88 鍵盤の仮想ピアノ アプリケーションです。 選択可能なコードマクロ、録音機能、検索したコードを検索する Web スクレイピング ツールが付属しています。",
+  "description_typelord" : "TypeLord は、タイピングの速度と正確さをテストするテキスト アドベンチャー タイピング ゲームです。 タイピングスキルを練習する楽しく簡単な方法です。",
+  "view_in_github": "Githubで見る",
+  "view_website": "ウェブサイトを見る"
+}
