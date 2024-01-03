@@ -1,6 +1,5 @@
-
-import React, { useEffect, useRef } from 'react';
-import lottie from 'lottie-web';
+import React, { useEffect, useRef } from "react";
+import lottie from "lottie-web";
 
 const Animation = ({ containerRef }) => {
   const svgAnimRef = useRef(null);
@@ -9,10 +8,10 @@ const Animation = ({ containerRef }) => {
     const loadAnimation = async () => {
       lottie.loadAnimation({
         container: svgAnimRef.current,
-        renderer: 'svg',
+        renderer: "svg",
         loop: true,
         autoplay: true,
-        path: '/myWeb/bg-anim.json',
+        path: "/myWeb/bg-anim.json",
       });
     };
 
@@ -29,9 +28,9 @@ const Animation = ({ containerRef }) => {
     <div
       ref={svgAnimRef}
       style={{
-        position: 'absolute',
-        width: '100%',
-        pointerEvents: 'none',
+        position: "absolute",
+        width: "100%",
+        pointerEvents: "none",
         zIndex: 1,
       }}
     />
