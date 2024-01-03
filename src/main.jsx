@@ -14,14 +14,7 @@ const loadingMarkup = (
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Suspense fallback={loadingMarkup}>
     <React.StrictMode>
-      <Router basename="/myWeb">
-        <Switch>
-          <Route path="/" component={App} />
-          <Route path="/en" component={App} />
-          <Route path="/th" component={App} />
-          <Route path="/jp" component={App} />
-        </Switch>
-      </Router>
+      <App />
     </React.StrictMode>
   </Suspense>
 );
