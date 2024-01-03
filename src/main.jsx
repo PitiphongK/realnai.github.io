@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 
 import App from "./App.jsx";
 import "bootstrap/dist/css/bootstrap.css";
@@ -11,10 +11,17 @@ const loadingMarkup = (
   </div>
 );
 
+const router = createHashRouter([
+  {
+    path: "/*",
+    element: <App />,
+  },
+]);
+
 ReactDOM.createRoot(document.getElementById("root")).render(
   <Suspense fallback={loadingMarkup}>
     <React.StrictMode>
-      <App />
+      <RouterProvider router={router} />
     </React.StrictMode>
   </Suspense>
 );
