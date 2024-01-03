@@ -33,7 +33,7 @@ i18n
     },
 
     backend: {
-      loadPath: "/assets/locales/{{lng}}/translation.json", // lng is detected language
+      loadPath: "/myWeb/assets/locales/{{lng}}/translation.json", // lng is detected language
     },
   });
 
