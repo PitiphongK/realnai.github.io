@@ -48,7 +48,7 @@ const Navbar = () => {
 
   return (
     <nav className={scrolled ? "scrolled" : ""}>
-      <a href="/" className="title">
+      <a href="/myWeb/" className="title">
         <img className="logo" src={comet} alt="" />
         <h1>{t("suisei")}</h1>
       </a>
