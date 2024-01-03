@@ -17,6 +17,7 @@ nav {
 .scrolled {
     background-color: var(--white);
     color: var(--black);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
 .title {
