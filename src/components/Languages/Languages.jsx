@@ -13,8 +13,8 @@ const Languages = () => {
   return (
     <div className="select-language">
       {data?.languages?.map((language, index, array) => (
-        <a
-          href={`/myWeb/${language.code}`}
+        <div
+          // href={`/myWeb/${language.code}`}
           className="language"
           key={language.name}
         >
@@ -31,7 +31,7 @@ const Languages = () => {
           </div>
           {/* if last element */}
           {index !== array.length - 1 && <h4>|</h4>}
-        </a>
+        </div>
       ))}
     </div>
   );
