@@ -1,9 +1,12 @@
+import { useTranslation } from "react-i18next";
 import "./Contacts.css";
+
 const Contacts = () => {
+  const { t } = useTranslation();
   return (
     <div className="contacts" id="contacts">
       <div className="contacts-wrap">
-        <h1>Contact</h1>
+        <h1>{t("contact")}</h1>
         <div className="contacts-items">
           <a
             href="mailto:pitiphong.kit@gmail.com"

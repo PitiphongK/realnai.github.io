@@ -1,0 +1,21 @@
+{
+    "suisei": "Suisei",
+    "home": "Home",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contact": "Contact",
+
+    "hi_im_pitiphong": "Hi, I'm Pitiphong",
+    "a_software_engineer_student": "A Software Engineer Student",
+
+    "computer_programming": "Computer Programming",
+    "video_editing_illustration": "Video Editing and Illustration",
+
+    "description_seweb": "Software Engineering Website project was a classroom website that students can subbmit their assignments and teachers can grade them.",
+    "description_vibin": "Vibin Studio is a software application that enables users to play and manage their music files on a computer.",
+    "description_pocket_piano" : "Pocket piano is an 88-key virtual piano application that is easyto use and enjoyable for every pianist. It comes with selectable chordmacros, a recording function, and a web scraping tool that will look up the chords that you searched.",
+    "description_typelord" : "TypeLord is a text-adventure typing game that will test your typing speed and accuracy. It is a fun and easy way to practice your typing skills.",
+    "view_in_github": "View in Github",
+    "view_website": "View Website"
+  
+  }

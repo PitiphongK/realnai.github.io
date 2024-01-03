@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import data from "../../assets/data.json";
 
 const ProjectItem = () => {
+  const { t } = useTranslation();
   return (
     <>
       {data?.projects?.map((project, index) => (
@@ -10,18 +12,18 @@ const ProjectItem = () => {
           </div>
           <div className="project-item-content">
             <h4>{project.name}</h4>
-            <p>{project.description}</p>
+            <p>{t(project.description)}</p>
           </div>
           <div className="project-links">
             <div>
               <a href={project.github} target="_blank">
-                View in Github
+                {t("view_in_github")}
               </a>
             </div>
             <div>
               {project.link && (
                 <a href={project.link} target="_blank">
-                  View Website
+                  {t("view_website")}
                 </a>
               )}
             </div>

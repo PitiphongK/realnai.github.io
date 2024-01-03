@@ -1,13 +1,15 @@
 import { Tooltip } from "react-tooltip";
+import { useTranslation } from "react-i18next";
 import data from "../../assets/data.json";
 import "./Skills.css";
 const Skills = () => {
+  const { t } = useTranslation();
   return (
     <div className="skills" id="skills">
       <div className="skills-wrap">
-        <h1>Skills</h1>
+        <h1>{t("skills")}</h1>
         <div className="skills-categories">
-          <h3>Computer Programing</h3>
+          <h3>{t("computer_programming")}</h3>
           <div className="skills-list">
             {data?.skills?.["computer-programming"]?.map((skill, index) => (
               <div
@@ -38,7 +40,7 @@ const Skills = () => {
           </div>
         </div>
         <div className="skills-categories">
-          <h3>Video Editing and Illustration</h3>
+          <h3>{t("video_editing_illustration")}</h3>
           <div className="skills-list">
             {data?.skills?.["video-editing-illustration"]?.map(
               (skill, index) => (

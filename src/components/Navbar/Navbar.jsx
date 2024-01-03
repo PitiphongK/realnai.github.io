@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from "react";
+import { useTranslation } from "react-i18next";
 import NavButton from "./NavButton.jsx";
 import comet from "../../assets/images/comet.png";
 import data from "../../assets/data.json";
 import "./Navbar.css";
 
 const Navbar = () => {
+  const { t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
   const [navSideActive, setNavSideActive] = useState(false);
 
@@ -46,7 +48,7 @@ const Navbar = () => {
     <nav className={scrolled ? "scrolled" : ""}>
       <a href="/" className="title">
         <img className="logo" src={comet} alt="" />
-        <h1>Suisei</h1>
+        <h1>{t("suisei")}</h1>
       </a>
       <div className="nav-hamburger" onClick={toggleNav}>
         <i className={`fa-solid fa-bars ${scrolled ? "scrolled" : ""}`}></i>
@@ -62,7 +64,7 @@ const Navbar = () => {
             to={button.id}
             onClick={closeNav}
           >
-            {button.name}
+            {t(button.name)}
           </NavButton>
         ))}
       </div>

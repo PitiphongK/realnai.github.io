@@ -1,10 +1,18 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import App from './App.jsx'
-import 'bootstrap/dist/css/bootstrap.css'
+import React, { Suspense } from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App.jsx";
+import "bootstrap/dist/css/bootstrap.css";
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-)
+const loadingMarkup = (
+  <div>
+    <h1>Loading...</h1>
+  </div>
+);
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+  <Suspense fallback={loadingMarkup}>
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  </Suspense>
+);

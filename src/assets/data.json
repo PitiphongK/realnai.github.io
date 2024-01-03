@@ -62,47 +62,64 @@
     "projects": [
         {
             "name": "Software Engineering’s Website",
-            "description": "Software Engineering Website project was created to encourage education and teamwork in the software engineering industry. ",
+            "description": "description_seweb",
             "image": "./projects/SEweb.svg",
             "github": "https://github.com/Kasitphoom/SEWeb",
             "link": "https://seweb.kasitphoom.com/"
         },
         {
             "name": "Vibin Studio",
-            "description": "Vibin Studio is a software application that enables users to play and manage their music files on a computer.",
+            "description": "description_vibin",
             "image": "./projects/vibin.svg",
             "github": "https://github.com/Kasitphoom/Audio_EQ"
         },
         {
             "name": "Pocket Piano",
-            "description": "Software Engineering Website project was created to encourage education and teamwork in the software engineering industry. ",
+            "description": "description_pocket_piano",
             "image": "./projects/pocketpiano.svg",
             "github": "https://github.com/RealNai/Pocket-Piano"
         },
         {
             "name": "TypeLord",
-            "description": "Vibin Studio is a software application that enables users to play and manage their music files on a computer.",
+            "description": "description_typelord",
             "image": "./projects/typelord.svg",
             "github": ""
         }
     ],
     "buttons": [
         {
-            "name": "Home",
+            "name": "home",
             "id" : "profile"
         },
         {
-            "name": "Skills",
+            "name": "skills",
             "id" : "skills"
         },
         {
-            "name": "Projects",
+            "name": "projects",
             "id" : "projects"
         },
         {
-            "name": "Contact",
+            "name": "contact",
             "id" : "contacts"
         }
-    ]
-
+    ],
+    "languages" : [
+        {
+          "code": "en",
+          "name": "English",
+          "country_code": "gb"
+        },
+        {
+          "code": "th",
+          "name": "ไทย",
+          "country_code": "th"
+        },
+        {
+          "code": "jp",
+          "name": "日本語",
+          "country_code": "jp"
+        }
+      ]
+      
 }

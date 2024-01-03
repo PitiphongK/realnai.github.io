@@ -31,6 +31,7 @@ nav {
     padding: 0.6rem 2rem;
     border-radius: 3rem;
     transition: all 0.2s ease-in-out;
+    position: relative;
 }
 
 .title.scrolling {
@@ -112,6 +113,7 @@ nav {
 .nav-close .custom {
     z-index: 100;
     color: var(--black);
+    display: none;
 }
 
 .nav-hamburger .scrolled {
@@ -129,7 +131,7 @@ nav {
     background: rgba(0, 0, 0, 0.5); /* Adjust the opacity as needed */
     z-index: 1; /* Ensure the overlay is above other elements */
     display: none; /* Initially hide the overlay */
-  }
+}
   
   
 
@@ -166,6 +168,7 @@ nav {
     .title {
         margin-left: 2rem;
     }
+    
     .nav-hamburger {
         display: flex;
         position: absolute;
@@ -177,6 +180,10 @@ nav {
         font-size: 4rem;
         cursor: pointer;
         align-self: flex-end;
+    }
+
+    .nav-close .custom {
+        display: flex;
     }
       /* When the 'active' class is added, display the overlay */
     .overlay.active {
