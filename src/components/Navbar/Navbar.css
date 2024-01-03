@@ -132,6 +132,23 @@ nav {
     z-index: 1; /* Ensure the overlay is above other elements */
     display: none; /* Initially hide the overlay */
 }
+
+.nav-languages {
+    display: none;
+    position: absolute;
+    align-self: center;
+    bottom: 3rem;
+
+}
+
+.nav-languages h4 {
+    font-size: 1.1rem !important;
+
+}
+.nav-languages .flag-size {
+    width: 1rem !important;
+    height: 1rem !important;
+}
   
   
 
@@ -188,6 +205,10 @@ nav {
       /* When the 'active' class is added, display the overlay */
     .overlay.active {
         display: block;
+    }
+
+    .nav-languages {
+        display: flex;
     }
     
 }

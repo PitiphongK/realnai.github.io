@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 import NavButton from "./NavButton.jsx";
+import Languages from "../Languages/Languages.jsx";
+
 import comet from "../../assets/images/comet.png";
 import data from "../../assets/data.json";
 import "./Navbar.css";
@@ -67,6 +69,9 @@ const Navbar = () => {
             {t(button.name)}
           </NavButton>
         ))}
+        <div className="nav-languages">
+          <Languages />
+        </div>
       </div>
       <div
         className={`overlay ${navSideActive ? "active" : ""}`}

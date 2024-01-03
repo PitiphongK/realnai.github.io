@@ -1,0 +1,39 @@
+.select-language {
+    display: flex;
+    align-items: center;
+    gap: 0.2rem;
+}
+
+.language {
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+}
+
+.choose-language {
+    display: flex;
+    gap: 0.2rem;
+    align-items: center;
+    &:hover {
+        cursor: pointer;
+        opacity: 0.5;
+    }
+}
+
+.choose-language.active {
+    opacity: 1;
+    color: var(--accent);
+}
+
+.choose-language.active h4 {
+    font-weight: 700;
+}
+
+.footer-wrap h4 {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+.flag-size {
+    width: 2rem;
+    height: 2rem;
+}
