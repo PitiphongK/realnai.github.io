@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { useTranslation } from "react-i18next";
 import suisei from "../../assets/images/suisei.png";
+import phong from "../../assets/images/my_pic.png";
 import Animation from "../Animation/Animation";
 
 import "./Profile.css";
@@ -18,7 +19,7 @@ export default function Header() {
           <h3>{t("a_software_engineer_student")}</h3>
         </div>
         <div className="profile-picture">
-          <img className="suisei" src={suisei} alt="suisei picture" />
+          <img className="suisei" src={phong} alt="suisei picture" />
         </div>
       </div>
     </div>
