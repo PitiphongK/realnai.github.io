@@ -83,7 +83,7 @@
             "name": "TypeLord",
             "description": "description_typelord",
             "image": "./projects/typelord.svg",
-            "github": ""
+            "github": "https://github.com/RealNai/TypeLord"
         }
     ],
     "buttons": [
