@@ -141,8 +141,8 @@ nav.scrolled {
     display: none;
     position: absolute;
     align-self: center;
-    bottom: 3rem;
-
+    bottom: 10rem;
+    
 }
 
 .nav-languages h4 {

@@ -15,15 +15,17 @@ const ProjectItem = () => {
             <p>{t(project.description)}</p>
           </div>
           <div className="project-links">
-            <div>
-              <a href={project.github} target="_blank">
+            <div >
+              <a href={project.github} target="_blank" className="github-link">
+                <i className="fa-brands fa-github"></i>
                 {t("view_in_github")}
               </a>
             </div>
             <div>
               {project.link && (
-                <a href={project.link} target="_blank">
+                <a href={project.link} target="_blank" className="github-link">
                   {t("view_website")}
+                  <i className="fa-solid fa-up-right-from-square"></i>
                 </a>
               )}
             </div>
