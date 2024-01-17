@@ -1,13 +1,22 @@
 import { useTranslation } from "react-i18next";
+import { useState } from "react";
+import ReCAPTCHA from "react-google-recaptcha";
 import "./Contacts.css";
 
 const Contacts = () => {
   const { t } = useTranslation();
+  const [captcha, setCaptcha] = useState(null);
+
   return (
     <div className="contacts" id="contacts">
       <div className="contacts-wrap">
         <h1>{t("contact")}</h1>
-        <div className="contacts-items">
+        <ReCAPTCHA
+          sitekey="6Lfo5FMpAAAAAI6Y0YkCOosYs2Qou1mdcRbRcH8D"
+          onChange={(val) => setCaptcha(val)}
+          className={captcha && "unactive"}
+        />
+        <div className={`contacts-items ${captcha ? "" : "unactive"}`}>
           <a
             href="mailto:pitiphong.kit@gmail.com"
             className="contacts-item"

@@ -35,6 +35,11 @@
     align-items: center;
     justify-content: flex-start;
     gap: 2rem;
+    transition: 0.2s ease-in;
+}
+
+.unactive {
+    display: none;
 }
 
 .contacts-item:nth-child(even) {

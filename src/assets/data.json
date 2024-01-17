@@ -65,25 +65,29 @@
             "description": "description_seweb",
             "image": "./projects/SEweb.svg",
             "github": "https://github.com/Kasitphoom/SEWeb",
-            "link": "https://seweb.kasitphoom.com/"
+            "link": "https://seweb.kasitphoom.com/",
+            "languages": ["Python", "FastAPI", "ZODB", "JavaScript", "CSS", "HTML"]
         },
         {
             "name": "Vibin Studio",
             "description": "description_vibin",
             "image": "./projects/vibin.svg",
-            "github": "https://github.com/Kasitphoom/Audio_EQ"
+            "github": "https://github.com/Kasitphoom/Audio_EQ",
+            "languages": ["C++", "Qt"]
         },
         {
             "name": "Pocket Piano",
             "description": "description_pocket_piano",
             "image": "./projects/pocketpiano.svg",
-            "github": "https://github.com/RealNai/Pocket-Piano"
+            "github": "https://github.com/RealNai/Pocket-Piano",
+            "languages": ["Python", "Pygame"]
         },
         {
             "name": "TypeLord",
             "description": "description_typelord",
             "image": "./projects/typelord.svg",
-            "github": "https://github.com/RealNai/TypeLord"
+            "github": "https://github.com/RealNai/TypeLord",
+            "languages": ["Java"]
         }
     ],
     "buttons": [

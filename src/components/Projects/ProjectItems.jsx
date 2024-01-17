@@ -12,10 +12,15 @@ const ProjectItem = () => {
           </div>
           <div className="project-item-content">
             <h4>{project.name}</h4>
+            <div className="programming-languages">
+              {project.languages.map((language) => (
+                <div className="programming-language">{language}</div>
+              ))}
+            </div>
             <p>{t(project.description)}</p>
           </div>
           <div className="project-links">
-            <div >
+            <div>
               <a href={project.github} target="_blank" className="github-link">
                 <i className="fa-brands fa-github"></i>
                 {t("view_in_github")}
