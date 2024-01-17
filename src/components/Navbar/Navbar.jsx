@@ -26,22 +26,10 @@ const Navbar = () => {
       setScrolled(isScrolled);
     };
 
-    // when width is greater than 768px, close the nav side bar
-    const handleResize = () => {
-      if (navSideActive && window.innerWidth > 630) {
-        // Automatically open the navigation
-        setNavSideActive(true);
-      } else if (window.innerWidth > 630) {
-        closeNav();
-      }
-    };
-
-    window.addEventListener("resize", handleResize);
     window.addEventListener("scroll", handleScroll);
 
     // Clean up the event listener on component unmount
     return () => {
-      window.removeEventListener("resize", handleResize);
       window.removeEventListener("scroll", handleScroll);
     };
   }, [navSideActive]);
