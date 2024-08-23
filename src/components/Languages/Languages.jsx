@@ -14,7 +14,7 @@ const Languages = () => {
     <div className="select-language">
       {data?.languages?.map((language, index, array) => (
         <div
-          // href={`/myWeb/${language.code}`}
+          // href={`/${language.code}`}
           className="language"
           key={language.name}
         >

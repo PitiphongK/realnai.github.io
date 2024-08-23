@@ -11,7 +11,7 @@ const Animation = ({ containerRef }) => {
         renderer: "svg",
         loop: true,
         autoplay: true,
-        path: "/myWeb/bg-anim.json",
+        path: "/bg-anim.json",
       });
     };
 

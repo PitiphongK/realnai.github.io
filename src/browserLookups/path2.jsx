@@ -26,7 +26,7 @@ export default {
       //   const preferredLanguage = cookieLanguage || defaultLanguage;
 
       //   // Redirect to the language-specific path
-      //   window.location.replace(`/myWeb/${preferredLanguage}`);
+      //   window.location.replace(`/${preferredLanguage}`);
       // }
     }
     return found;
